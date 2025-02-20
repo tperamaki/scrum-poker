@@ -1,6 +1,6 @@
 'use client';
 
-import { PropsWithChildren, useContext, useEffect, useState } from 'react';
+import { PropsWithChildren, useContext, useEffect, useState, type JSX } from 'react';
 import { GameContext } from './Game';
 import { vote } from '@/network';
 import Link from 'next/link';

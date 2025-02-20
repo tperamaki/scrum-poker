@@ -6,6 +6,7 @@ import {
   Dispatch,
   SetStateAction,
   useCallback,
+  type JSX,
 } from 'react';
 import { Vote } from './Vote';
 import JoinGame from './JoinGame';

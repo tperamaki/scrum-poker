@@ -1,6 +1,6 @@
 'use client';
 
-import { useContext } from 'react';
+import { useContext, type JSX } from 'react';
 import { GameContext } from './Game';
 import { Button } from './Buttons';
 

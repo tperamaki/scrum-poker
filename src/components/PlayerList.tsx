@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, type JSX } from 'react';
 import { GameContext } from './Game';
 import { kick } from '@/network';
 import { Button } from './Buttons';

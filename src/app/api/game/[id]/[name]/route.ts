@@ -6,7 +6,7 @@ const redisUrlString = process.env.REDIS_URL_STRING ?? 'redis://localhost:6379';
 const REDIS_EXPIRE_MS = 15 * 60;
 
 interface Params {
-  params: { id: string; name: string };
+  params: Promise<{ id: string; name: string }>;
 }
 
 const setValueForPlayerInGame = async (
@@ -28,7 +28,8 @@ const setValueForPlayerInGame = async (
 };
 
 // Join a game
-export async function POST(request: Request, { params }: Params) {
+export async function POST(request: Request, props: Params) {
+  const params = await props.params;
   const redis = new Redis(redisUrlString);
   await setValueForPlayerInGame(params.id, params.name, -1, redis);
   await redis.quit();
@@ -36,7 +37,8 @@ export async function POST(request: Request, { params }: Params) {
 }
 
 // Vote a value
-export async function PUT(request: Request, { params }: Params) {
+export async function PUT(request: Request, props: Params) {
+  const params = await props.params;
   const redis = new Redis(redisUrlString);
   const res = await request.json();
   await setValueForPlayerInGame(params.id, params.name, res.value, redis);
@@ -45,7 +47,8 @@ export async function PUT(request: Request, { params }: Params) {
 }
 
 // Leave a game or delete a player from game
-export async function DELETE(request: Request, { params }: Params) {
+export async function DELETE(request: Request, props: Params) {
+  const params = await props.params;
   const redis = new Redis(redisUrlString);
   await setValueForPlayerInGame(params.id, params.name, undefined, redis);
   await redis.quit();

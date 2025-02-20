@@ -1,5 +1,7 @@
 import { VoteButton } from './Buttons';
 
+import type { JSX } from "react";
+
 export const Vote = (): JSX.Element => {
   const cards = [0, 1, 2, 3, 5, 8, 13, 21];
 
