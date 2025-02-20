@@ -1,14 +1,14 @@
 import { test, expect } from '@playwright/test';
 
 test('has title', async ({ page }) => {
-  await page.goto('https://planning-poker.tperamaki.com');
+  await page.goto('https://scrum-poker.tperamaki.com');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Planning Poker/);
+  await expect(page).toHaveTitle(/Scrum Poker/);
 });
 
 test('get started link', async ({ page }) => {
-  await page.goto('https://planning-poker.tperamaki.com');
+  await page.goto('https://scrum-poker.tperamaki.com');
 
   // Click the new room button
   await page.getByRole('link', { name: 'Create new' }).click();

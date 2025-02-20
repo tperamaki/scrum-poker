@@ -6,9 +6,7 @@ export default function LandingPage() {
   const newGameId = randomUUID();
   return (
     <main className="p-5">
-      <h2 className="text-3xl font-bold mt-5 mb-5">
-        Welcome to planning poker.
-      </h2>
+      <h2 className="text-3xl font-bold mt-5 mb-5">Welcome to scrum poker.</h2>
       <p className="py-6">
         Use a link from your friend or a colleague to join, or{' '}
         <NewGameLink className="underline hover:text-red-800 dark:hover:text-red-200">
@@ -16,24 +14,24 @@ export default function LandingPage() {
         </NewGameLink>
       </p>
       <div className="flex flex-col gap-5 py-6 px-10 border-solid rounded-lg border-2 mt-5 mb-10 leading-relaxed">
-        <h3 className="text-xl font-bold">What is planning poker?</h3>
+        <h3 className="text-xl font-bold">What is scrum poker?</h3>
         <p>
-          Planning Poker is a collaborative technique used by agile teams to
+          Scrum Poker is a collaborative technique used by agile teams to
           estimate the effort or complexity of user stories or tasks. It allows
           team members to contribute their individual insights and knowledge to
           arrive at a shared understanding of the work involved.
         </p>
         <br />
         <h3 className="text-xl font-bold">
-          Why yet another online planning poker?
+          Why yet another online scrum poker?
         </h3>
         <p>
-          It&apos;s true that there are many similar planning pokers available.
+          It&apos;s true that there are many similar scrum pokers available.
           Some have more features than this one, but most of them are not free,
           or they are bloated with ads, or require you to signup.
         </p>
         <p>
-          I wanted to create a planning poker that is really free to use for
+          I wanted to create a scrum poker that is really free to use for
           everyone, and one that is open-source, so anyone can contribute. You
           can find a link to Github on bottom of this page.
         </p>
@@ -54,7 +52,7 @@ export default function LandingPage() {
           for more information.
         </p>
         <br />
-        <h3 className="text-xl font-bold">How does Planning Poker work?</h3>
+        <h3 className="text-xl font-bold">How does Scrum Poker work?</h3>
         <ol className="list-decimal">
           <li className="py-2">
             <p>
@@ -74,7 +72,7 @@ export default function LandingPage() {
           <li className="py-2">
             <p>
               Assign story points: Story points are a relative unit of
-              measurement used in Planning Poker to represent the effort,
+              measurement used in Scrum Poker to represent the effort,
               complexity, or size of a user story or task. Each participant will
               assign a story point value to the selected item independently and
               privately. Story points cannot be linked to working days or hours,
@@ -108,20 +106,18 @@ export default function LandingPage() {
           </li>
         </ol>
         <br />
-        <h3 className="text-xl font-bold">
-          How does Planning Poker help teams:
-        </h3>
+        <h3 className="text-xl font-bold">How does Scrum Poker help teams:</h3>
         <ol className="list-decimal">
           <li className="py-2">
             <p>
               Foster collaboration: By involving all team members in the
-              estimation process, Planning Poker encourages collaboration and
+              estimation process, Scrum Poker encourages collaboration and
               ensures that everyone&apos;s input is considered.
             </p>
           </li>
           <li className="py-2">
             <p>
-              Promote transparency: The open discussion during Planning Poker
+              Promote transparency: The open discussion during Scrum Poker
               promotes transparency within the team. It allows for a deeper
               understanding of the work involved and any potential challenges.
             </p>
@@ -130,28 +126,28 @@ export default function LandingPage() {
             <p>
               Improve estimation accuracy: The collective wisdom and diverse
               perspectives of the team result in more accurate estimations.
-              Planning Poker helps eliminate biases and minimizes the risk of
+              Scrum Poker helps eliminate biases and minimizes the risk of
               underestimating or overestimating tasks.
             </p>
           </li>
           <li className="py-2">
             <p>
-              Enhance team communication: Planning Poker facilitates
-              communication and knowledge sharing among team members. It
-              encourages active participation and provides a platform for
-              individuals to express their thoughts and concerns.
+              Enhance team communication: Scrum Poker facilitates communication
+              and knowledge sharing among team members. It encourages active
+              participation and provides a platform for individuals to express
+              their thoughts and concerns.
             </p>
           </li>
         </ol>
         <p>
-          Remember, the goal of Planning Poker is not to find the
-          &quot;right&quot; answer, but to leverage the collective intelligence
-          of the team to arrive at a consensus estimate. It is a valuable tool
-          for agile teams to plan and prioritize their work effectively.
+          Remember, the goal of Scrum Poker is not to find the &quot;right&quot;
+          answer, but to leverage the collective intelligence of the team to
+          arrive at a consensus estimate. It is a valuable tool for agile teams
+          to plan and prioritize their work effectively.
         </p>
         <p>
-          Start estimating with Planning Poker today and experience the benefits
-          of collaborative estimation in your projects. Happy planning!
+          Start estimating with Scrum Poker today and experience the benefits of
+          collaborative estimation in your projects. Happy planning!
         </p>
       </div>
     </main>

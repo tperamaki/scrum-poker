@@ -1,6 +1,6 @@
 {
-  "short_name": "PlanPoker",
-  "name": "Planning Poker",
+  "short_name": "ScrumPoker",
+  "name": "Scrum Poker",
   "icons": [
     {
       "src": "/images/icons-vector.svg",
@@ -30,5 +30,5 @@
   "display": "standalone",
   "scope": "/",
   "theme_color": "#FFFFFF",
-  "description": "Planning poker for scrum teams"
+  "description": "Scrum poker for scrum teams"
 }

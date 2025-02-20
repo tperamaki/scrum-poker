@@ -5,8 +5,8 @@ import './globals.css';
 import { NewGameLink } from '@/components/Buttons';
 
 export const metadata = {
-  title: 'Planning Poker',
-  description: 'Planning poker for Scrum',
+  title: 'Scrum Poker',
+  description: 'Scrum poker for Scrum',
 };
 
 export default function RootLayout({
@@ -33,7 +33,7 @@ export default function RootLayout({
             </Link>
           </div>
           <div className="flex-initial">
-            <h1 className="text-xl">Planning poker</h1>
+            <h1 className="text-xl">Scrum poker</h1>
           </div>
           <div className="flex-1 text-right">
             <NewGameLink className="p-2 rounded border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out">
@@ -47,7 +47,7 @@ export default function RootLayout({
             Found an issue? Contribute on{' '}
             <Link
               className="underline hover:text-red-800 dark:hover:text-red-200"
-              href="https://github.com/tperamaki/planning-poker"
+              href="https://github.com/tperamaki/scrum-poker"
             >
               Github
             </Link>
