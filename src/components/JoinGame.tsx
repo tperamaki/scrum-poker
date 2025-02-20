@@ -20,7 +20,7 @@ export default function JoinGame() {
       <div className="flex gap-4">
         <input
           id="playerNameInput"
-          className="dark:bg-neutral-500 p-2 rounded"
+          className="dark:bg-neutral-500 p-2 rounded-sm"
           onChange={(val) => {
             setNewPlayerName(val.currentTarget.value);
           }}

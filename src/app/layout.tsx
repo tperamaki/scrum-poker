@@ -26,7 +26,7 @@ export default function RootLayout({
         <nav className="flex gap-1">
           <div className="flex-1">
             <Link
-              className="p-2 rounded border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out"
+              className="p-2 rounded-sm border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out"
               href="/"
             >
               Home
@@ -36,13 +36,13 @@ export default function RootLayout({
             <h1 className="text-xl">Scrum poker</h1>
           </div>
           <div className="flex-1 text-right">
-            <NewGameLink className="p-2 rounded border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out">
+            <NewGameLink className="p-2 rounded-sm border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out">
               Create new
             </NewGameLink>
           </div>
         </nav>
         <div>{children}</div>
-        <footer className="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-neutral-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-neutral-800 dark:border-neutral-600">
+        <footer className="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-neutral-200 shadow-sm md:flex md:items-center md:justify-between md:p-6 dark:bg-neutral-800 dark:border-neutral-600">
           <p>
             Found an issue? Contribute on{' '}
             <Link

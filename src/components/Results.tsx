@@ -55,7 +55,7 @@ export const Results = (): JSX.Element => {
                   : ''
               } ${
                 isSmallestInResultsArray(arr, val)
-                  ? '!bg-green-100 dark:!bg-green-900'
+                  ? 'bg-green-100! dark:bg-green-900!'
                   : ''
               }`}
             >

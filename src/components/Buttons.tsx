@@ -10,7 +10,7 @@ export const Button = (props: React.ComponentPropsWithoutRef<'button'>) => {
   return (
     <button
       {...props}
-      className={`p-2 rounded border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out`}
+      className={`p-2 rounded-sm border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out`}
     />
   );
 };

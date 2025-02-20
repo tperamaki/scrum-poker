@@ -96,13 +96,13 @@ export const Game = (props: { id: string }): JSX.Element => {
       <div className="flex flex-row gap-3">
         <div className="flex flex-col gap-3 my-5 min-w-[200px]">
           <Button
-            className="p-2 rounded border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out"
+            className="p-2 rounded-sm border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out"
             onClick={copyUrl}
           >
             {urlCopied ? 'Copied!' : 'Copy URL to clipboard'}
           </Button>
           <Button
-            className="p-2 rounded border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out"
+            className="p-2 rounded-sm border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out"
             onClick={() => {
               resetGame(props.id);
               setGame((game) =>
@@ -115,7 +115,7 @@ export const Game = (props: { id: string }): JSX.Element => {
             Reset game
           </Button>
           <Button
-            className="p-2 rounded border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out"
+            className="p-2 rounded-sm border-2 border-black dark:border-white hover:bg-neutral-400 dark:hover:bg-neutral-600 transition-all duration-100 ease-in-out"
             onClick={() => {
               showResults(props.id);
               setGame((game) => {
